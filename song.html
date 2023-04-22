@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset='utf-8'>
+    <title>MUSIC</title>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel="stylesheet" href="./css/song.css">
+    <link rel="stylesheet" media="screen and (max-width:1399px)" href="./js/song.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="./js/song.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+
+    <!--타이틀 이미지-->
+    <link href="./image/music_logo.png" rel="shortcut icon" type="image/x-icon">
+
+    <!--SCRIPT-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!--스와이프-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!--스와이프-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+
+    <!--나이스 스크롤-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <nav class="navbar">
+                <div class="logo">SONG</div>
+
+                <div class="toggle" onclick="tgMenu();"></div>
+
+                <!-- MENU -->
+                <ul class="menu" onclick="tgMenu();">
+                    <li>
+                        <a href="#">
+                            <h2>MUSIC</h2>
+                        </a>
+                        <ol class="sub_menu">
+                            <li>
+                                <a href="#">
+                                    <h4>MUSIC.Inc</h4>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <h4>CEO</h4>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <h4>HISTORY</h4>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <h4>CONTACT US</h4>
+                                </a>
+                            </li>
+                        </ol>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <h2>ARTIST</h2>
+                        </a>
+                        <ol class="sub_menu">
+                            <li>
+                                <a href="#">
+                                    <h4>BIGBANG</h4>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <h4>BTS</h4>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <h4>MAMAMOO</h4>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <h4>REDVELVET</h4>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <h4>TWICE</h4>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <h4>BLACKPINK</h4>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <h4>NCT</h4>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <h4>AESPA</h4>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <h4>IVE</h4>
+                                </a>
+                            </li>
+                        </ol>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <h2>CATEGORY</h2>
+                        </a>
+
+                        <ol class="sub_menu">
+                            <li>
+                                <a href="#">
+                                    <h4>ARTIST</h4>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <h4>LIGHT STICK</h4>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <h4>ALBUM</h4>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <h4>CD/LP</h4>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <h4>SONG CHART</h4>
+                                </a>
+                            </li>
+                        </ol>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <h2>EVENT</h2>
+                        </a>
+
+                        <ol class="sub_menu">
+                            <li>
+                                <a href="#">
+                                    <h4>SIGN CD</h4>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <h4>SIGN ALBUM</h4>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <h4>RANDOM-BOX</h4>
+                                </a>
+                            </li>
+                        </ol>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <h2>NOTICE</h2>
+                        </a>
+
+                        <ol class="sub_menu">
+                            <li>
+                                <a href="#">
+                                    <h4>INQUIRY</h4>
+                                </a>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <!-- MENU -->
+
+                <!-- SNS -->
+                <ul class="icon">
+                    <li><img src="./image/twitter.png" alt="트위터"></li>
+                    <li><img src="./image/facebook.png" alt="페이스북"></li>
+                </ul>
+                <!-- SNS -->
+            </nav>
+        </header>
+        <!-- nav -->
+
+        <!--메인 롤링 배너 -->
+        <div id="contentWrapper">
+            <div id="main_banner">
+                <div class="main_banner">
+                    <span class="mslide01"><a href="#"><img src="./image/main00.png"/></a></span>
+                    <span class="mslide01"><a href="#"><img src="./image/main01.png"/></a></span>
+                    <span class="mslide01"><a href="#"><img src="./image/main02.png"/></a></span>
+                    <span class="mslide04"><a href="#"><img src="./image/main03.png"/></a></span>
+                    <span class="mslide05"><a href="#"><img src="./image/main04.png"/></a></span>
+                    <span class="mslide06"><a href="#"><img src="./image/main05.png"/></a></span>
+                </div>
+            </div>
+        </div>
+        <!--//메인 롤링 배너-->
+
+        <div class="space"></div>
+
+        <!-- 앨범상품 -->
+        <div class="product_div">
+            <div class="product_set">
+                <span>ARTIST LIGHT STICK PICK</span>
+            </div>
+
+            <!-- 응원봉 -->
+            <div class="stick">
+                <div class="card-box">
+                    <img class="item" src="./image/item1.png" alt="BTS 응원봉">
+
+                    <article>
+                        <h2>[ B T S ] 응원봉</h2>
+                        <span>339,000 KRW</span>
+                    </article>
+                </div>
+
+                <div class="card-box">
+                    <img class="item" src="./image/item2.png" alt="블랙핑크 응원봉">
+
+                    <article>
+                        <h2>[ B L A C K P I N K ] 응원봉</h2>
+                        <span>SOLD OUT</span>
+                    </article>
+                </div>
+
+                <div class="card-box">
+                    <img class="item" src="./image/item3.png" alt="에스파 응원봉">
+
+                    <article>
+                        <h2>[ A E S P A ] 응원봉</h2>
+                        <span>88,000 KRW</span>
+                    </article>
+                </div>
+
+                <div class="card-box">
+                    <img class="item" src="./image/item4.png" alt="NCT 응원봉">
+
+                    <article>
+                        <h2>[ N C T ] 응원봉</h2>
+                        <span>256,000 KRW</span>
+                    </article>
+                </div>
+
+                <div class="card-box">
+                    <img class="item" src="./image/item5.png" alt="위너 응원봉">
+
+                    <article>
+                        <h2>[ W I N N E R ] 응원봉</h2>
+                        <span>42,000 KRW</span>
+                    </article>
+                </div>
+
+                <div class="card-box">
+                    <img class="item" src="./image/item6.png" alt="아이유 응원봉">
+
+                    <article>
+                        <h2>[ I U ] 응원봉</h2>
+                        <span>87,700 KRW</span>
+                    </article>
+                </div>
+
+                <div class="card-box">
+                    <img class="item" src="./image/item7.png" alt="레드벨벳 응원봉">
+
+                    <article>
+                        <h2>[ R E D V E L V E T ] 응원봉</h2>
+                        <span>89,000 KRW</span>
+                    </article>
+                </div>
+
+                <div class="card-box">
+                    <img class="item" src="./image/item8.png" alt="EXO 응원봉">
+
+                    <article>
+                        <h2>[ E X O ] 응원봉</h2>
+                        <span>90,000 KRW</span>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+        <div class="space"></div>
+
+        <!-- 상단배너 -->
+        <div class="top_banner">
+           <img src="./image/bn_music.png"/>
+        </div>
+
+        <!-- 앨범CD -->
+        <div class="album_set">
+            <h2>최신앨범</h2>
+
+            <div class="swiper-container">
+                <!-- 이전 버튼 -->
+                <div class="btn_prev"></div>
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./image/album_mj.jpg" alt="가수 노래" title="이무진 앨범">
+                        <h4>신호등</h4>
+                        <h5>이무진</h5>
+                        <p class="title">신호등</p>
+                        <p class="date">2021.5.14</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./image/album_aespa.jpg" alt="가수 노래" title="에스파 앨범">
+                        <h4>Next Level</h4>
+                        <h5>aespa(에스파)</h5>
+                        <p class="title">Next Level</p>
+                        <p class="date">2021.5.17</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./image/album_ive.jpg" alt="가수 노래" title="아이브 앨범">
+                        <h4>ELEVEN</h4>
+                        <h5>IVE(아이브)</h5>
+                        <p class="title">ELEVEN</p>
+                        <p class="date">2021.12.1</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./image/album_ty.jpg" alt="가수 노래" title="태연 앨범">
+                        <h4>INVU</h4>
+                        <h5>태연</h5>
+                        <p class="title">INVU</p>
+                        <p class="date">2022.2.14</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./image/album_pjb.jpg" alt="가수 노래" title="박재범 앨범">
+                        <h4>GANADARA (Feat.IU)</h4>
+                        <h5>박재범</h5>
+                        <p class="title">GANADARA (Feat.IU)</p>
+                        <p class="date">2022.3.11</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./image/album_idle.jpg" alt="가수 노래" title="아이들 앨범">
+                        <h4>TOMEBOY</h4>
+                        <h5>G-IDLE(아이들)</h5>
+                        <p class="title">TOMBOY</p>
+                        <p class="date">2022.3.14</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./image/album_rv.jpg" alt="가수 노래" title="레드벨벳 앨범">
+                        <h4>Fell My Rhythm</h4>
+                        <h5>Red Velvet(레드벨벳)</h5>
+                        <p class="title">Fell My Rhythm</p>
+                        <p class="date">2022.3.18</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./image/album_bang.jpg" alt="가수 노래" title="빅뱅 앨범">
+                        <h4>봄 여름 가을 겨울</h4>
+                        <h5>BIGBANG(빅뱅)</h5>
+                        <p class="title">봄 여름 가을 겨울</p>
+                        <p class="date">2022.4.5</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./image/album_mb.jpg" alt="가수 노래" title="문별 앨범">
+                        <h4>서툰 이별을 하려해</h4>
+                        <h5>문별(마마무)</h5>
+                        <p class="title">서툰 이별을 하려해</p>
+                        <p class="date">2022.3.28</p>
+                    </div>
+                </div>
+
+                <!-- 다음 버튼 -->
+                <div class="btn_next"></div>
+                <div class="space"></div>
+            </div>
+        </div>
+
+        <div class="station_set">
+            <h2>STATION</h2>
+            <ul>
+                <li>
+                    <img class="cd_img" src="./image/cd1.png" alt="마마무_CD">
+                    <p class="title">HIP</p>
+                    <p class="contents">믿듣 MAMAMOO</p>
+                </li>
+
+                <li>
+                    <img class="cd_img" src="./image/cd2.png" alt="BTS_CD">
+                    <p class="title">BTS의 Butter</p>
+                    <p class="contents">천재 아이돌 BTS</p>
+                </li>
+
+                <li>
+                    <img class="cd_img" src="./image/cd3.png" alt="G-IDLE_CD">
+                    <p class="title">화(火花)</p>
+                    <p class="contents">G-IDLE 레전드</p>
+                </li>
+
+                <li>
+                    <img class="cd_img" src="./image/cd4.png" alt="EXO_CD">
+                    <p class="title">Ko Ko Bop</p>
+                    <p class="contents">With SM EXO!</p>
+                </li>
+            </ul>
+
+            <div class="space"></div>
+        </div>
+
+        <!--공지사항-->
+        <div class="f_banner"></div>
+
+        <div class="board_set">
+            <div class="inner">
+                <span>공지사항</span>
+                <p>개인정보처리방침 개정 안내</p>
+
+                <ul>
+                    <li class="date">2022-02-22</li>
+                    <li class="more">MORE</li>
+                </ul>
+                <div class="space"></div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="top_footer">
+                <div class="inner">
+                    <ul>
+                        <li>이용약관</li>
+                        <li>위치기반서비스 이용약관</li>
+                        <li>개인정보처리방침</li>
+                        <li>청소년보호정책</li>
+                    </ul>
+                    <div class="space"></div>
+                </div>
+            </div>
+
+            <div class="bottom_footer">
+                <div class="inner">
+                    <div class="f_logo">
+                        <img src="./image/headset.png" alt="헤드폰로고">
+                    </div>
+
+                    <div class="copyright">
+                        <ul>
+                            <li>
+                                <span>주소</span>
+                                서울특별시 성북구 뮤직동 1222 7층
+                            </li>
+
+                            <li>
+                                <span>대표자</span>
+                                최소연
+                            </li>
+
+                            <li>
+                                <span>이메일</span>
+                                music@kakao.com
+                            </li>
+                        </ul>
+                        <p> © 개인용 포트폴리오용으로 제작하였습니다.</p>
+                    </div>
+
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <span>고객센터</span>
+                                1877-5000
+                            </li>
+
+                            <li>
+                                070-0709-1222 <span>(인터넷 무료전화)</span>
+                            </li>
+                        </ul>
+                        <div class="space"></div>
+                    </div>
+                    <div class="space"></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/song.js"></script>
+</body>
+
+</html>
