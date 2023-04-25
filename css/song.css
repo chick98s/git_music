@@ -9,7 +9,6 @@
 }
 
 body {
-    overflow: auto;
     background: #ffffff;
 }
 
@@ -163,7 +162,7 @@ li {
     height: 239px;
     position: absolute;
     top: 0;
-    left: 110px;
+    left: 150px;
     z-index: 0;
 }
 
@@ -186,13 +185,13 @@ li {
 #main_banner .slick-slide {
     transform: scale(0.9);
     transition: transform .5s linear;
-    margin: 0;
+    margin: 25px;
 }
 
 #main_banner .slick-slide img {
     padding-top: 15%;
-    padding-left: 22%;
-    margin: 0 15px;
+    padding-left: 32%;
+    margin: 0 20px;
     max-width: 60vw;
 }
 
@@ -202,7 +201,7 @@ li {
 }
 
 #main_banner .slick-dots {
-    bottom: -60px;
+    bottom: -30px;
 }
 
 #main_banner .slick-dots li {
@@ -391,8 +390,9 @@ li {
 .swiper-slide img {
     width: 75%;
     padding: 5% 13%;
-    max-width: 100%; /* 이미지 최대 넓이 제한, 슬라이드에 이미지 여러개 보여주기 */
+    /* max-width: 100%; 이미지 최대 넓이 제한, 슬라이드에 이미지 여러개 보여주기 */
 }
+
 
 .swiper-slide>img:hover {
     opacity: 0.5;
@@ -648,14 +648,16 @@ footer {
     margin-right: 8px;
 }
 
-@media screen and (max-width:1399px) {
+/* 브라우저 창 크기가 1399px 작아지는 순간 적용 */
+@media all and (max-width: 1399px) {
     /* 이미지 슬라이드 */
     #main_banner .slick-slide img {
-        padding-top: 20%;
+        width: 90%;
+        padding-top: 12%;
     }
 
     #main_banner .slick-dots {
-        bottom: -20px;
+        bottom: -30px;
     }
 
     /* 응원봉 */
@@ -679,23 +681,23 @@ footer {
 
     /* 앨범영역 */
     .swiper-container {
-        width: 910px;
+        width: 900px;
     }
 
     /* 앨범 이미지 크기 */
     .swiper-slide img {
-        width: 65%;
-        padding: 25% 20%;
+        width: 70%;
+        padding: 10% 15%;
     }
 
     /* 이전 */
     .btn_prev {
-        top: 30%;
+        top: 35%;
     }
 
     /* 다음 */
     .btn_next {
-        top: 30%;
+        top: 35%;
     }
 
     /* 스테이션 */
@@ -798,7 +800,8 @@ footer {
     }
 }
 
-@media screen and (max-width: 768px) {
+/* 브라우저 창이 768px보다 작아지는 순간 적용 */
+@media all and (max-width: 768px) { 
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -882,13 +885,9 @@ footer {
     }
 
     /* 이미지 슬라이드 */
-    #main_banner:before {
-        width: 330px;
-        height: 339px;
-    }
-
     #main_banner .slick-slide img {
-        padding-top: 80%;
+        padding-top: 45%;
+        margin: 0 10px;
     }
 
     #main_banner .slick-dots {
@@ -904,23 +903,31 @@ footer {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    /* 이전 */
-    .btn_prev {
-        position: absolute;
-        top: 50%;
-    }
-
-    /* 다음 */
-    .btn_next {
-        position: absolute;
-        top: 50%;
-    }
-
     /* 앨범영역 */
     .swiper-container {
         width: 450px;
         height: 500px;
         position: relative;
+    }
+
+    /* 이전 */
+    .btn_prev {
+        position: absolute;
+        top: 35%;
+    }
+
+    /* 다음 */
+    .btn_next {
+        position: absolute;
+        top: 35%;
+    }
+
+    .station_set > ul {
+        width: 100%;
+    }
+
+    .station_set > ul > li {
+        width: 50%;
     }
 
     .f_banner {
@@ -935,23 +942,35 @@ footer {
     }
 
     .board_set li.date {
-        position: relative;
-        top: -80px;
-        left: 80%;
+        display: none;
+    }
+
+    .board_set li.more {
+        display: none;
     }
 
     .top_footer {
         display: none
     }
 
-    .copyright li span {
-        padding-top: 15px;
-        display: block;
-        height: 30px
+    .f_logo {
+        padding-top: 25px;
+        padding-left: 55px;
     }
 
+    .copyright {
+        position: relative;
+        top: 20px;
+        left: -20px;
+        height: 80px;
+    }
+    
     .copyright p {
-        padding-top: 55px;
+        margin: 55px 0;
         left: 0;
+    }
+
+    .info {
+        display: none;
     }
 }
