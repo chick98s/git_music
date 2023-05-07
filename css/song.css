@@ -97,11 +97,11 @@ li {
 }
 
 .sub_menu li {
-    background-color: black;
     opacity: 0.75;
     padding: 5px 5px;
     font-size: 14px;
     float: none;
+    background-color: black;
 }
 
 .sub_menu li a {
@@ -179,19 +179,20 @@ li {
 }
 
 #main_banner .main_banner {
+    position: relative;
     z-index: 1;
+    top: 150px;
 }
 
+/* slick */
 #main_banner .slick-slide {
     transform: scale(0.9);
     transition: transform .5s linear;
-    margin: 25px;
 }
 
 #main_banner .slick-slide img {
-    padding-top: 15%;
-    padding-left: 32%;
-    margin: 0 20px;
+    padding-left: 20%;
+    margin: 0 110px;
     max-width: 60vw;
 }
 
@@ -201,7 +202,7 @@ li {
 }
 
 #main_banner .slick-dots {
-    bottom: -30px;
+    bottom: -15%
 }
 
 #main_banner .slick-dots li {
@@ -222,8 +223,8 @@ li {
 }
 
 #main_banner .slick-dots li.slick-active button {
-    background: #8300ff;
     width: 40px;
+    background: #8300ff;
 }
 
 #main_banner .slick-dots li button:before {
@@ -650,6 +651,7 @@ footer {
 
 /* 브라우저 창 크기가 1399px 작아지는 순간 적용 */
 @media all and (max-width: 1399px) {
+
     /* 이미지 슬라이드 */
     #main_banner .slick-slide img {
         width: 90%;
@@ -801,7 +803,13 @@ footer {
 }
 
 /* 브라우저 창이 768px보다 작아지는 순간 적용 */
-@media all and (max-width: 768px) { 
+@media all and (min-height: 320px) and (max-width: 768px) {
+    /* 모바일 수평 스크롤 금지 */
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -812,6 +820,8 @@ footer {
     .logo {
         margin: 0 auto;
     }
+
+    .icon { display: none; }
 
     /* 햄버거 메뉴 */
     .toggle {
@@ -824,7 +834,7 @@ footer {
         z-index: 999;
         position: absolute;
         top: 30px;
-        right: 30px;
+        right: 20px;
     }
 
     .toggle.active {
@@ -837,7 +847,7 @@ footer {
         transition: 0.3s;
         z-index: 999;
         top: 30px;
-        right: 30px;
+        right: 20px;
     }
 
     .toggle.active:hover {
@@ -885,13 +895,21 @@ footer {
     }
 
     /* 이미지 슬라이드 */
+    #main_banner {
+        height: 80vh;
+    }
+
+    #main_banner .main_banner {
+        top: 200px;
+    }
+
     #main_banner .slick-slide img {
-        padding-top: 45%;
-        margin: 0 10px;
+        margin: 0 25px;
+        height: 300px;
     }
 
     #main_banner .slick-dots {
-        bottom: -60px;
+        bottom: -25%;
     }
 
     .board_set>.inner>ul {
@@ -905,28 +923,34 @@ footer {
 
     /* 앨범영역 */
     .swiper-container {
-        width: 450px;
-        height: 500px;
-        position: relative;
+        width: 350px;
+        height: 510px;
+        overflow-x: hidden;
+    }
+
+    /* 앨범 이미지 크기 */
+    .swiper-slide img {
+        width: 77%;
+        padding: 5% 12%;
     }
 
     /* 이전 */
     .btn_prev {
         position: absolute;
-        top: 35%;
+        top: 27%;
     }
 
     /* 다음 */
     .btn_next {
         position: absolute;
-        top: 35%;
+        top: 27%;
     }
 
-    .station_set > ul {
+    .station_set>ul {
         width: 100%;
     }
 
-    .station_set > ul > li {
+    .station_set>ul>li {
         width: 50%;
     }
 
@@ -949,6 +973,11 @@ footer {
         display: none;
     }
 
+    footer {
+        width: 100%;
+        height: 160px;
+    }
+    
     .top_footer {
         display: none
     }
@@ -960,14 +989,25 @@ footer {
 
     .copyright {
         position: relative;
-        top: 20px;
-        left: -20px;
+        top: 30px;
         height: 80px;
     }
+
+    .copyright ul li {
+        font-size: 12px;
+        width: 100%;
+        display: flex;
+    }
     
+    .copyright span {
+        position: relative;
+        font-size: 12px;
+        margin: 0 35px;
+    }
+
     .copyright p {
-        margin: 55px 0;
-        left: 0;
+        top: -15px;
+        font-size: 12px;
     }
 
     .info {
