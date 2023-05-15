@@ -394,7 +394,6 @@ li {
     /* max-width: 100%; 이미지 최대 넓이 제한, 슬라이드에 이미지 여러개 보여주기 */
 }
 
-
 .swiper-slide>img:hover {
     opacity: 0.5;
 }
@@ -655,7 +654,8 @@ footer {
     /* 이미지 슬라이드 */
     #main_banner .slick-slide img {
         width: 90%;
-        padding-top: 12%;
+        padding-top: 0;
+        margin: 0 75px;
     }
 
     #main_banner .slick-dots {
