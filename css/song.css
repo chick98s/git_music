@@ -825,7 +825,7 @@ footer {
 
     /* 햄버거 메뉴 */
     .toggle {
-        background: url(http://step079.dothome.co.kr/img/menu.png) no-repeat;
+        background: url(../image/menu.png) no-repeat;
         background-size: cover;
         background-position: center;
         width: 30px;
@@ -838,7 +838,7 @@ footer {
     }
 
     .toggle.active {
-        background: url(http://step079.dothome.co.kr/img/cancel.png) no-repeat;
+        background: url(../image/cancel.png) no-repeat;
         background-size: cover;
         background-position: center;
         width: 30px;
